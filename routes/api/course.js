@@ -53,7 +53,7 @@ router.get("/courses", (req, res, next) => {
       }
     });
 });
-
+/* get courses */
 router.get("/course", (req, res) => {
   //var decoded = jwt.verify(req.headers['authorization'], process.env.SECRET_KEY)
 
