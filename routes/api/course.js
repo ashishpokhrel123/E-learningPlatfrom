@@ -5,15 +5,14 @@ let catmodel = require("../../models/Category");
 let express = require("express");
 let router = express.Router();
 
+/*Adding question*/
+
 router.post("/course/add", (req, res) => {
-  //req.body
+
   if (!req.body) {
     return res.status(400).json("request body is missing");
   }
   console.log(req.body);
-  // let model=new coursemodel(req.body)
-  // function(err, model){
-  //     if(!err, model){
   catmodel.find({ categoryName: req.body.category }, function(error, cat) {
     if (!error && cat) {
       console.log("Cat printed" + cat);
