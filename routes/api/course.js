@@ -35,7 +35,7 @@ router.post("/course/add", (req, res) => {
       });
   });
 });
-
+  /* courses find*/
 router.get("/courses", (req, res, next) => {
   //var decoded = jwt.verify(req.headers['authorization'], process.env.SECRET_KEY)
 
