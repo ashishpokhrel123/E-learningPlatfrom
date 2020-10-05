@@ -32,7 +32,7 @@ class Login extends Component {
       password: this.state.password
     };
 
-    this.props.loginUser(newUser);
+    
   }
 
   componentWillReceiveProps(nextProps) {
@@ -73,7 +73,7 @@ class Login extends Component {
                       width="60px"
                       className="sticky-logo img-fluid"
                     />
-                    <h3>KnowHow</h3>
+                    <h3>learningHub</h3>
                   </div>
                   <h4 className="mb-3 f-w-400">Login into your account</h4>
 
@@ -120,19 +120,7 @@ class Login extends Component {
                         </div>
                       )}
                     </div>
-                    {/* <div className="saprator">
-                      <span>OR</span>
-                    </div> */}
-                    {/* <button className="btn btn-facebook mb-2 mr-2">
-                      <i className="fab fa-facebook-f" />
-                      facebook
-                    </button> */}
-
                    
-      {/* //               <button className="btn btn-twitter mb-2 mr-2">
-      //                 <i className="fab fa-twitter" />
-      //                 Twitter
-      //               </button> */}
                          <div className="form-group text-left mt-2">
                          <div className="checkbox checkbox-fill d-inline">
                          <input

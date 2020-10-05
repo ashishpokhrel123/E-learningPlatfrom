@@ -6,11 +6,12 @@
   "scripts": {
     "client-install": "npm install --prefix client",
     "start": "node server.js",
+    "test": "jest",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\" "
   },
-  "author": "Apurva Savaj",
+  "author": "Ashish Pokhrel",
   "license": "",
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -28,6 +29,8 @@
     "validator": "^11.1.0"
   },
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "jest": "^26.4.2",
+    "nodemon": "^1.19.1",
+    "supertest": "^5.0.0"
   }
 }

@@ -3,24 +3,21 @@ import setAuthToken from "../utils/setAuthToken";
 import jwt_decode from "jwt-decode";
 import { GET_ERRORS, SET_CURRENT_USER } from "./types";
 
-//registerUser action creator takes data and dispatch action to reducer along with payload
-export const registerUser = (userData, history) => dispatch => {
-  //here we are dealing with asyncnorous data while fetching from backend we need to wait for /////response then we can dispatch action and payload to the reducer.
-  //so we need to use thunk middleware
 
+export const registerUser = (userData, history) => dispatch => {
+  
   axios
     .post("http://localhost:5000/users/register", userData)
     .then(res => history.push("/login"))
     .catch(err =>
       dispatch({
-        //we are just not returning we are dispatching using redux-thunk
         type: GET_ERRORS,
         payload: err.response.data
       })
     );
 };
 
-//Login - Get user token , //loginUser action creator
+
 export const loginUser = userData => dispatch => {
   axios
     .post("http://localhost:5000/users/login", userData)

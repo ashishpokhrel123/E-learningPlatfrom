@@ -133,7 +133,7 @@ class Root extends Component {
               path={`${process.env.PUBLIC_URL}/blog-left-sidebar`}
               component={BlogLeftSidebar}
             />
-              <PrivateRoute
+              <Route
               exact
               path={`${process.env.PUBLIC_URL}/addcourse/:id`}
               component={AddCourse}
@@ -163,7 +163,7 @@ class Root extends Component {
               path={`${process.env.PUBLIC_URL}/allusers`}
               component={UserList}
             />
-             <PrivateRoute
+             <Route
               exact
               path={`${process.env.PUBLIC_URL}/users/create`}
               component={CreateUser}
@@ -173,7 +173,7 @@ class Root extends Component {
               path={`${process.env.PUBLIC_URL}/allusers/edit/:id`}
               component={EditUser}
             />
-            <PrivateRoute
+            <Route
               exact
               path={`${process.env.PUBLIC_URL}/dashboard`}
               component={Dashboard}
@@ -228,7 +228,7 @@ class Root extends Component {
               path={`${process.env.PUBLIC_URL}/404`}
               component={PageNotFound}
             />
-            <PrivateRoute
+            <Route
               exact
               path={`${process.env.PUBLIC_URL}/finaldashboard`}
               component={FinalDashboard}

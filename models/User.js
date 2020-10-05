@@ -4,16 +4,12 @@ const Schema = mongoose.Schema
 const UserSchema = new Schema({
     first_name: {
         type: String,
-        lowercase: true,
     },
     last_name: {
         type: String,
-        lowercase: true,
-    },
+    }, 
     email: {
         type: String,
-        lowercase: true,
-        trim: true,
         required: true
     },
     password: {
